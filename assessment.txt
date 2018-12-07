@@ -1,0 +1,29 @@
+String obfuscate(String input, Integer charOffset, Map<String, String> wordMap)
+{
+int i,j,count=0,b;
+int len=length(input);
+while(input[i]!='\0')
+{
+if((input[i]<='z' && input[i]>='a'0)||(input[i]<='Z' && input[i]>='A'))
+{
+j=0;
+while(j<size(wordMap)){
+if(wordMap[j].first==input[i])
+{
+input[i]=wordMap[j].second;
+break;
+}
+j++;
+}
+}
+else
+count++;
+
+}
+if(count==len)
+{
+b=Integer.parseInt(input);
+b=b*charOffset;
+
+}
+}
